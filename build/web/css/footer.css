@@ -1,0 +1,19 @@
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    color: #ffc107;
+}
+
+footer .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+footer img {
+    border-radius: 8px;
+}

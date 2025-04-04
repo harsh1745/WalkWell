@@ -1,0 +1,308 @@
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Content Styling */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.header-content a {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.header-content a:hover {
+    background-color: #d35400;
+}
+
+/* Navigation Buttons */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+.slider-nav button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.slider-nav button:hover {
+    background-color: #f39c12;
+}
+
+/* Overlay */
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Close Button */
+.btn-close {
+    filter: brightness(0) invert(1);
+}
+
+/* Input Field */
+.form-control {
+    padding: 12px 15px;
+    border-radius: 10px;  /* Rounded corners */
+    border: 2px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0062cc;
+    box-shadow: none;
+}
+
+/* Input Group (for icon buttons) */
+.input-group {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.input-group-prepend, .input-group-append {
+    background: transparent;
+    border: none;
+}
+
+.input-group-text {
+    border: none;
+    background: transparent;
+    color: #666;
+}
+
+/* Password Visibility Toggle Button */
+.password-toggle {
+    cursor: pointer;
+}
+
+/* Login Button */
+.btn-login {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #0062cc, #0096ff);
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 98, 204, 0.3);
+}
+
+.btn-social {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.btn-social i {
+    margin-right: 10px;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+/*            .divider::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 45%;
+                height: 1px;
+                background: #eee;
+            }
+
+            .divider::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 45%;
+                height: 1px;
+                background: #eee;
+            }*/
+
+.divider span {
+    background: white;
+    padding: 0 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Form Check (for remember me) */
+.form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+/* Register Link */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+/* Section Headings */
+section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Products Section */
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card .card-title {
+    font-weight: bold;
+}
+
+/* Testimonials Section */
+.carousel-item {
+    text-align: center;
+    padding: 30px;
+}
+
+.carousel-item h5 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.carousel-item p {
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #ccc;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.categories{
+    background-color: #ECDFCC;
+}
+
+.category-card {
+    transition: transform 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.category-card:hover {
+    transform: scale(1.05);
+    transition: transform 1s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.card-link:hover {
+    text-decoration: none;
+}
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+.card-title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
