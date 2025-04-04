@@ -31,3 +31,9 @@ Add screenshots of the login page, dashboard, etc.
 
 Made with 💖 by Harsh  
 GitHub: [@harsh1745](https://github.com/harsh1745)
+
+## 📷 Screenshot
+
+### 🔐 Login Page:
+
+![Login Page](screenshots/login-page.png)
